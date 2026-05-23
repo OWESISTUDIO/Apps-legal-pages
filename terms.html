@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use — TeacherVault</title>
+  <meta name="description" content="TeacherVault terms of use: who can use the app, what you can and cannot do, and the legal terms that apply." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1A6B3C" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #1A6B3C;
+      --primary-dark: #005A2E;
+      --primary-gradient-end: #0B7A3A;
+      --soft-green: #E1F5EE;
+      --card-green: #F3FBF7;
+      --border-soft: #DCEFE5;
+      --background-cream: #FAF8F2;
+      --white: #FFFFFF;
+      --text-dark: #1A1A1A;
+      --text-gray: #6B7280;
+      --text-muted: #9CA3AF;
+      --warning-bg: #FCEDD3;
+      --warning-border: #E8A23A;
+      --shadow-soft: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(26, 107, 60, 0.04);
+      --shadow-hero: 0 8px 32px rgba(0, 90, 46, 0.18);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--text-dark);
+      background-color: var(--background-cream);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ============ Hero ============ */
+    .hero {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-gradient-end) 100%);
+      color: var(--white);
+      padding: 56px 24px 72px;
+      text-align: center;
+      box-shadow: var(--shadow-hero);
+    }
+
+    .hero__brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 18px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+
+    .hero__brand svg { display: block; }
+
+    .hero__title {
+      margin: 24px 0 8px;
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    .hero__subtitle {
+      margin: 0 auto;
+      max-width: 540px;
+      font-size: clamp(15px, 2vw, 17px);
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.55;
+    }
+
+    .hero__meta {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 6px 14px;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+
+    /* ============ Container ============ */
+    main {
+      max-width: 760px;
+      margin: -40px auto 0;
+      padding: 0 20px 80px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ============ Intro card ============ */
+    .intro-card {
+      background: var(--white);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 28px 28px 24px;
+      box-shadow: var(--shadow-soft);
+      margin-bottom: 32px;
+    }
+
+    .intro-card p {
+      margin: 0 0 14px;
+      color: var(--text-dark);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .intro-card p:last-child { margin-bottom: 0; }
+
+    .intro-card strong {
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    /* ============ Section ============ */
+    .section {
+      margin-bottom: 32px;
+      padding: 28px;
+      background: var(--white);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .section__header {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .section__number {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      background: var(--soft-green);
+      color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: -0.01em;
+    }
+
+    .section__title {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--primary);
+      letter-spacing: -0.01em;
+      line-height: 1.35;
+      padding-top: 4px;
+    }
+
+    .section p {
+      margin: 0 0 14px;
+      color: var(--text-dark);
+      line-height: 1.7;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 14px;
+    }
+
+    .section ul li {
+      position: relative;
+      padding: 6px 0 6px 22px;
+      line-height: 1.6;
+    }
+
+    .section ul li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 14px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    .section a {
+      color: var(--primary);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(26, 107, 60, 0.25);
+      transition: border-color 0.15s ease;
+    }
+
+    .section a:hover { border-bottom-color: var(--primary); }
+
+    .section strong { font-weight: 600; }
+
+    /* ============ Callout (warning / important) ============ */
+    .callout {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 16px;
+      margin: 14px 0;
+      background: var(--warning-bg);
+      border-left: 3px solid var(--warning-border);
+      border-radius: var(--radius-sm);
+    }
+
+    .callout svg {
+      flex-shrink: 0;
+      color: var(--warning-border);
+      margin-top: 2px;
+    }
+
+    .callout p {
+      margin: 0;
+      font-size: 14.5px;
+      line-height: 1.55;
+      color: #5C3B0E;
+    }
+
+    .callout p strong { color: #4A2F0A; font-weight: 700; }
+
+    /* ============ Contact card ============ */
+    .contact-card {
+      background: linear-gradient(135deg, var(--soft-green) 0%, var(--card-green) 100%);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-card__title {
+      margin: 0 0 8px;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      letter-spacing: -0.01em;
+    }
+
+    .contact-card__subtitle {
+      margin: 0 0 20px;
+      color: var(--text-gray);
+      font-size: 15px;
+    }
+
+    .contact-card__rows {
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact-card__row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      background: var(--white);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      font-size: 15px;
+    }
+
+    .contact-card__row svg {
+      flex-shrink: 0;
+      color: var(--primary);
+    }
+
+    .contact-card__row a {
+      color: var(--primary-dark);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contact-card__row a:hover { text-decoration: underline; }
+
+    .contact-card__row .label {
+      color: var(--text-gray);
+      font-size: 13px;
+      display: block;
+      margin-bottom: 2px;
+      letter-spacing: 0.01em;
+    }
+
+    .contact-card__sla {
+      margin: 18px 0 0;
+      padding: 12px 14px;
+      background: rgba(255, 255, 255, 0.55);
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      color: var(--text-gray);
+      text-align: center;
+    }
+
+    /* ============ Footer ============ */
+    footer {
+      text-align: center;
+      padding: 32px 20px 48px;
+      color: var(--text-muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border-soft);
+      background: var(--white);
+    }
+
+    footer strong {
+      color: var(--text-gray);
+      font-weight: 600;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    /* ============ Responsive ============ */
+    @media (max-width: 600px) {
+      .hero { padding: 40px 20px 60px; }
+      main { padding: 0 16px 60px; }
+      .intro-card, .section, .contact-card { padding: 20px; border-radius: var(--radius-md); }
+      .section__title { font-size: 18px; padding-top: 6px; }
+      .section__number { width: 32px; height: 32px; font-size: 14px; }
+      .contact-card__title { font-size: 19px; }
+      .callout { padding: 12px 14px; }
+    }
+
+    /* ============ Print ============ */
+    @media print {
+      body { background: white; color: black; font-size: 11pt; line-height: 1.5; }
+      .hero {
+        background: white !important;
+        color: var(--primary-dark) !important;
+        box-shadow: none;
+        padding: 16pt 0;
+        text-align: left;
+        border-bottom: 2pt solid var(--primary);
+      }
+      .hero__brand { background: none; border: none; padding: 0; color: var(--primary-dark); }
+      .hero__title { color: var(--primary-dark); }
+      .hero__subtitle, .hero__meta { color: var(--text-gray); background: none; border: none; padding: 0; }
+      main { margin-top: 16pt; padding: 0; max-width: 100%; }
+      .intro-card, .section, .contact-card {
+        background: white !important;
+        border: 1pt solid #ccc;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+        margin-bottom: 12pt;
+        padding: 12pt;
+      }
+      .section__number { background: white; border: 1pt solid var(--primary); }
+      .callout { background: white; border: 1pt solid #999; border-left: 3pt solid #999; }
+      footer { background: white; border-top: 1pt solid #ccc; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero__brand">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+      </svg>
+      TeacherVault
+    </div>
+    <h1 class="hero__title">Terms of Use</h1>
+    <p class="hero__subtitle">
+      The rules of the road for using TeacherVault. Please read these terms carefully before installing or using the app.
+    </p>
+    <div class="hero__meta">Last updated: 23 May 2026</div>
+  </header>
+
+  <main>
+
+    <div class="intro-card">
+      <p>
+        These Terms of Use (&ldquo;Terms&rdquo;) form a legal agreement between you and <strong>Owesi Studio</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;) governing your use of the TeacherVault Android application (&ldquo;the App&rdquo;, package <code>com.owesistudio.teachervault</code>).
+      </p>
+      <p>
+        By installing, opening, or using the App you confirm that you have read, understood, and agreed to be bound by these Terms and by our <a href="privacy.html">Privacy Policy</a>. If you do not agree, please uninstall the App.
+      </p>
+    </div>
+
+    <section class="section" id="acceptance">
+      <div class="section__header">
+        <div class="section__number">1</div>
+        <h2 class="section__title">Acceptance of these terms</h2>
+      </div>
+      <p>
+        These Terms take effect the moment you first install or use the App and continue until terminated. We may update them from time to time as described in Section 9. Continued use of the App after a change constitutes acceptance of the updated Terms.
+      </p>
+    </section>
+
+    <section class="section" id="eligibility">
+      <div class="section__header">
+        <div class="section__number">2</div>
+        <h2 class="section__title">Eligibility</h2>
+      </div>
+      <p>
+        The App is intended for adult school teachers (18 years or older) employed by or affiliated with educational institutions in Pakistan. By using the App you represent that:
+      </p>
+      <ul>
+        <li>You are at least 18 years old and legally capable of entering into this agreement.</li>
+        <li>You are using the App for your own professional record-keeping and not on behalf of any organisation that has not authorised such use.</li>
+        <li>You will provide accurate information when setting up your teacher profile.</li>
+      </ul>
+      <p>
+        The App is not directed at children under 13 and we do not knowingly permit such use.
+      </p>
+    </section>
+
+    <section class="section" id="license">
+      <div class="section__header">
+        <div class="section__number">3</div>
+        <h2 class="section__title">Your license to use the app</h2>
+      </div>
+      <p>
+        Subject to your compliance with these Terms, we grant you a personal, non-exclusive, non-transferable, non-sublicensable, revocable licence to install and use the App on Android devices you own or control, for your own professional teaching and record-keeping purposes.
+      </p>
+      <p>
+        This licence does <strong>not</strong> grant you ownership of the App, the App&rsquo;s source code, the Owesi Studio brand, or any associated intellectual property. All rights not expressly granted here are reserved.
+      </p>
+    </section>
+
+    <section class="section" id="responsibilities">
+      <div class="section__header">
+        <div class="section__number">4</div>
+        <h2 class="section__title">Your responsibilities and prohibited use</h2>
+      </div>
+      <p>You agree that you will not, and will not allow any third party to:</p>
+      <ul>
+        <li>Reverse-engineer, decompile, disassemble, or otherwise attempt to derive the source code of the App, except to the extent applicable law expressly permits.</li>
+        <li>Modify, adapt, translate, or create derivative works based on the App.</li>
+        <li>Distribute, sublicense, lease, rent, sell, or otherwise transfer the App or any portion of it to any third party.</li>
+        <li>Remove, alter, or obscure any copyright, trademark, or other proprietary notices.</li>
+        <li>Use the App to store, generate, or distribute content that is unlawful, defamatory, obscene, infringing, or harmful.</li>
+        <li>Use the App to violate any applicable law of the Islamic Republic of Pakistan or of any other jurisdiction in which you use the App.</li>
+        <li>Interfere with or disrupt the App, the servers it connects to, or any third-party services it uses.</li>
+        <li>Attempt to bypass the App&rsquo;s security features (encryption, lock screen, biometric gate, anti-screenshot protections).</li>
+      </ul>
+      <p>
+        You are solely responsible for the accuracy and legality of any content you store in the App, and for keeping your device, your PIN, and your biometric credentials secure.
+      </p>
+    </section>
+
+    <section class="section" id="content">
+      <div class="section__header">
+        <div class="section__number">5</div>
+        <h2 class="section__title">Your content</h2>
+      </div>
+      <p>
+        The App stores your profile, documents, lesson plans, diary entries, and other records entirely on your device, encrypted with AES-GCM-256. <strong>You own this content.</strong> We do not have access to it, we do not receive copies of it, and we cannot recover it for you.
+      </p>
+      <div class="callout">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+        </svg>
+        <p>
+          <strong>Always keep your own copies of important originals.</strong> If you lose your PIN, factory-reset your device, replace your phone, or your device fails, the encrypted data on it cannot be recovered &mdash; not by you and not by us. TeacherVault is a convenience tool, not a substitute for safekeeping critical documents.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="ai-content">
+      <div class="section__header">
+        <div class="section__number">6</div>
+        <h2 class="section__title">AI-generated content (lesson plans)</h2>
+      </div>
+      <p>
+        The App offers an optional AI-assisted lesson plan generator powered by Google&rsquo;s Gemini API. When you use this feature, the prompt you type (class, subject, topic, learning objectives) is sent to Google so it can generate a lesson plan. Your documents, profile, students&rsquo; data, and diary content are <strong>never</strong> sent.
+      </p>
+      <div class="callout">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+        </svg>
+        <p>
+          <strong>AI output is not guaranteed to be accurate, complete, or pedagogically appropriate.</strong> AI models can produce mistakes, outdated information, or content that does not match your curriculum board&rsquo;s requirements. You are responsible for reviewing, verifying, and editing every AI-generated plan before using it in your classroom or submitting it to any authority. We accept no liability for inaccuracies, errors, or consequences arising from reliance on AI-generated content.
+        </p>
+      </div>
+      <p>
+        Your use of the AI feature is also subject to Google&rsquo;s <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Gemini API Terms of Service</a>.
+      </p>
+    </section>
+
+    <section class="section" id="advertising">
+      <div class="section__header">
+        <div class="section__number">7</div>
+        <h2 class="section__title">Advertising and third-party services</h2>
+      </div>
+      <p>
+        The App is provided free of charge and displays interstitial advertisements served by Google AdMob to fund its development. Ads are frequency-capped so they do not interrupt back-to-back actions. By using the App you consent to receiving these ads.
+      </p>
+      <p>
+        The App also uses Firebase Crashlytics, Analytics, Performance Monitoring, Cloud Messaging, and Remote Config (all operated by Google) to keep the App stable and improve it over time. Details of what data is sent and how to control it are in our <a href="privacy.html">Privacy Policy</a>.
+      </p>
+      <p>
+        These third-party services are governed by their own terms and privacy policies. We are not responsible for the content or practices of third-party services beyond our integration with them.
+      </p>
+    </section>
+
+    <section class="section" id="ip">
+      <div class="section__header">
+        <div class="section__number">8</div>
+        <h2 class="section__title">Intellectual property</h2>
+      </div>
+      <p>
+        The App, including its name, logo, design, source code, copy, icons, and accompanying materials, is the intellectual property of Owesi Studio and is protected by Pakistani and international copyright and trademark laws.
+      </p>
+      <p>
+        The lesson plan and diary PDF templates aim to match the formats published by Pakistani provincial education departments. We are <strong>not affiliated</strong> with the Government of Punjab, the School Education Department, or any government body. If the official format changes, we will issue an update in a future release.
+      </p>
+    </section>
+
+    <section class="section" id="disclaimers">
+      <div class="section__header">
+        <div class="section__number">9</div>
+        <h2 class="section__title">Disclaimers and limitation of liability</h2>
+      </div>
+      <p>
+        <strong>The App is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo;</strong> without warranties of any kind, express or implied. To the maximum extent permitted by applicable law, Owesi Studio disclaims all warranties including, without limitation, implied warranties of merchantability, fitness for a particular purpose, non-infringement, accuracy, and uninterrupted operation.
+      </p>
+      <p>We do not warrant that:</p>
+      <ul>
+        <li>The App will always be available, error-free, or free of vulnerabilities.</li>
+        <li>Encrypted data is recoverable in every failure mode (hardware failure, device wipe, lost PIN, OS update, etc.).</li>
+        <li>AI-generated content is accurate or fit for any particular purpose.</li>
+        <li>Third-party services (Firebase, AdMob, Gemini) will be available at all times.</li>
+      </ul>
+      <p>
+        To the maximum extent permitted by law, in no event shall Owesi Studio, its directors, employees, contractors, or affiliates be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, or for any loss of data, revenue, profit, goodwill, or business opportunity, arising out of or in connection with your use of (or inability to use) the App, even if we have been advised of the possibility of such damages.
+      </p>
+      <p>
+        Our total aggregate liability arising out of or relating to these Terms or the App shall not exceed PKR 1,000 (one thousand Pakistani rupees).
+      </p>
+    </section>
+
+    <section class="section" id="termination">
+      <div class="section__header">
+        <div class="section__number">10</div>
+        <h2 class="section__title">Termination and changes</h2>
+      </div>
+      <p>
+        You may terminate this agreement at any time by uninstalling the App. Termination automatically wipes the App&rsquo;s on-device data in line with Android&rsquo;s standard uninstall behaviour.
+      </p>
+      <p>
+        We may suspend or discontinue the App, or any part of it, at any time without notice. We may also terminate your licence immediately if you breach these Terms.
+      </p>
+      <p>
+        We may update these Terms from time to time. Material changes will be announced in the App via the Help screen and reflected in the &ldquo;Last updated&rdquo; date at the top of this document. Continued use of the App after a change indicates acceptance of the new Terms.
+      </p>
+    </section>
+
+    <section class="section" id="law">
+      <div class="section__header">
+        <div class="section__number">11</div>
+        <h2 class="section__title">Governing law and disputes</h2>
+      </div>
+      <p>
+        These Terms are governed by and construed in accordance with the laws of the <strong>Islamic Republic of Pakistan</strong>, without regard to its conflict-of-law principles.
+      </p>
+      <p>
+        Any dispute, claim, or controversy arising out of or in connection with these Terms or the App shall be subject to the exclusive jurisdiction of the courts of Pakistan. You agree to first attempt to resolve any dispute informally by contacting us at <a href="mailto:info@owesistudio.com">info@owesistudio.com</a> before initiating any formal proceedings.
+      </p>
+    </section>
+
+    <section class="contact-card" id="contact">
+      <h2 class="contact-card__title">Contact us</h2>
+      <p class="contact-card__subtitle">
+        Questions about these Terms or how the App works? Please reach out.
+      </p>
+      <div class="contact-card__rows">
+        <div class="contact-card__row">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <div>
+            <span class="label">Email</span>
+            <a href="mailto:info@owesistudio.com">info@owesistudio.com</a>
+          </div>
+        </div>
+        <div class="contact-card__row">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/>
+          </svg>
+          <div>
+            <span class="label">Publisher</span>
+            <strong>Owesi Studio</strong>
+          </div>
+        </div>
+        <div class="contact-card__row">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <div>
+            <span class="label">Country</span>
+            <strong>Pakistan</strong>
+          </div>
+        </div>
+      </div>
+      <p class="contact-card__sla">We aim to respond within 2&ndash;3 working days.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2026 <strong>Owesi Studio</strong> &middot; All rights reserved &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="mailto:info@owesistudio.com">info@owesistudio.com</a>
+    </p>
+  </footer>
+
+</body>
+</html>
